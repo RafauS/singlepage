@@ -7,7 +7,9 @@ servicesItems.forEach(item => {
 
 function getItemList(event) {
     activeItem.querySelector(".navbar-left-color").classList.toggle("active-service")
+    document.querySelector("."+activeItem.getAttribute('name')).classList.toggle("hidden")
     activeItem = event.target.parentNode
     activeItem.querySelector(".navbar-left-color").classList.toggle("active-service")
+    document.querySelector("."+activeItem.getAttribute('name')).classList.toggle("hidden")
 }
 
